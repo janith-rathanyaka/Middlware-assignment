@@ -1,5 +1,12 @@
 # PetStore Application
 
+#Prerequisite Installation.
+1) Java Version 11.0 or above
+2) Docker Desktop
+3) Docker Compose
+4) SQL Database (PostgreSQL)
+5)
+
 Full Application Building Process & Deployement described in Root level in the Repo.  [./ReadMe.md]("")
 
 These are Some additional instructions for the API Configuration and additional Features for Microprofile.io
