@@ -11,6 +11,12 @@
 
 1) https://github.com/janith-rathanyaka/Middlware-assignment
 
+
+## Database Connection Implementation
+change petstore\src\main\resources\application.properties 
+   quarkus.datasource.password=1234  -- change password
+   quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/petstore -- database name
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
@@ -40,4 +46,11 @@ Or to use Mandrel distribution:
 You can then execute your native executable with:
 
     ./build/petstore-runner
+    
+##   Deploying Application
+start Docker compose after this use this command steps:
+1) ./gradlew build
+2) docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
+3) docker run -i --rm -p 8080:8080 quarkus/code-with-quarkus-jvm
+
 
